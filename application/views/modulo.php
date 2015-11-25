@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="row">
                 <div class="col-xs-6 col-md-3">
-                    <a href="<?= base_url('index.php/modulo/'); ?>" class="thumbnail">
+                    <a href="<?= base_url(); ?>" class="thumbnail">
                         <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="Teste">
 
                         <div class="caption">
@@ -117,4 +117,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?= base_url('assets/bootstrap/js/bootstrap.min.js') ?>"></script>
     </body>
 </html>
-
