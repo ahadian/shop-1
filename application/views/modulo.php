@@ -16,6 +16,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <?= link_tag('assets/bootstrap/css/bootstrap.min.css') ?>
         <?= link_tag('assets/bootstrap/css/bootstrap-theme.min.css') ?>
+        <?= link_tag('assets/bootstrap/css/local.css') ?>
+
 
         <style>
             body {
@@ -31,8 +33,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
     <body>
-
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        
+        
+         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -53,61 +56,61 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </nav>
 
-        <div class="container" style="border:1px solid #aa0000 ">
+        <div id="wrapper">
 
-            <div class="starter-template">
-                <h1>Bootstrap starter template</h1>
-                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="<?=  base_url();?>">
+                            Start Bootstrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Shortcuts</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            
+            <div class="container" style="border:1px solid #aa0000 ">
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Simple Sidebar</h1>
+                            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+            
             </div>
 
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                    <a href="<?= base_url(); ?>" class="thumbnail">
-                        <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="Teste">
-
-                        <div class="caption">
-                            <h4 class="text-center"> Thumbnail label</h4>
-                        </div> 
-                    </a>
-
-
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <a href="#" class="thumbnail">
-                        <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="...">
-
-                        <div class="caption">
-                            <h4 class="text-center" >Thumbnail label</h4>
-                        </div> 
-                    </a>
-                </div>
-
-
-                <div class="col-xs-6 col-md-3">
-                    <a href="#" class="thumbnail">
-                        <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="...">
-
-                        <div class="caption">
-                            <h4 class="text-center">Thumbnail label</h4>
-                        </div> 
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#" class="thumbnail">
-                        <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="...">
-
-                        <div class="caption">
-                            <h4 class="text-center">Thumbnail label</h4>
-                        </div> 
-                    </a>
-                </div>
-
-
-
-            </div>
-
-        </div><!-- /.container -->
+        </div>
 
 
         <!-- Bootstrap core JavaScript
@@ -115,5 +118,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="<?= base_url('assets/js/jquery.js') ?>"></script>	
         <script src="<?= base_url('assets/bootstrap/js/bootstrap.min.js') ?>"></script>
+
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
     </body>
 </html>
