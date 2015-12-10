@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
 
                 <div class="col-xs-6 col-md-3">
-                    <a href="#" class="thumbnail">
+                    <a href="<?= base_url('index.php/modulo01/'); ?>" class="thumbnail">
                         <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="...">
 
                         <div class="caption">
