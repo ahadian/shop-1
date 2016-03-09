@@ -7,14 +7,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author pemaza
  */
-class Modulo  extends CI_Controller{
- 
+class Home extends MX_Controller {
+
+    
+
     public function index() {
-        
-        
-        $this->load->view("modulo");
-        
+
+
+        $this->load->view("home");
     }
-    
-    
+
 }

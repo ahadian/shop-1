@@ -32,6 +32,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <body>
 
+
+
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -62,11 +64,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="row">
                 <div class="col-xs-6 col-md-3">
-                    <a href="<?= base_url('index.php/modulo/'); ?>" class="thumbnail">
+                    <a href="<?= base_url('home/modulo/'); ?>" class="thumbnail">
                         <img src="<?= base_url('assets/imagens/download.svg') ?>" alt="Teste">
 
                         <div class="caption">
-                            <h4 class="text-center"> Thumbnail label</h4>
+                            <h4 class="text-center">Clientes</h4>
                         </div> 
                     </a>
 
@@ -103,7 +105,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
                 </div>
 
-
+       
 
             </div>
 
